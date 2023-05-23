@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/*Cores*/
+:root {
+  --cinza: rgb(231, 231, 231);
+  --verde: rgba(150, 190, 153, 0.808);
+  --orage: rgb(255, 102, 0);
+}
+
+/*HEADER*/
+header,
+main {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 600px;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.perfil {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 350px;
+}
+
+.foto-perfil {
+  width: 300px;
+}
+
+.sobre {
+  background-color: var(--cinza);
+  padding: 2rem;
+}
+
+.rede-social {
+  display: flex;
+  justify-content: space-around;
+  font-size: 30px;
+}
+
+/*MAIN*/
+.habilidades {
+  background-color: antiquewhite;
+  width: 100%;
+}
+
+.box-tec {
+  width: 80%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img-tec {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+  flex-wrap: wrap;
+}
+
+.tec {
+  width: 250px;
+  height: 190px;
+  background-color: var(--verde);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  border-radius: 10px;
+}
+
+/*FORM*/
+
+.color-form {
+  background-color: var(--verde);
+  width: 100%;
+}
+
+.tamanho-form {
+  width: 400px;
+}
+
+form {
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+input {
+  width: 80%;
+  border: none;
+}
+
+.inputname {
+  height: 30px;
+}
+
+.inputname,
+.inputtext {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.boxassunto {
+  display: flex;
+  justify-content: center;
+}
+
+.inputtext {
+  height: 90px;
+  width: 81%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.puttext {
+  display: flex;
+}
+
+.enviar {
+  border: none;
+  width: 100px;
+  margin-left: 3.4rem;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: rgb(5, 5, 187);
+  color: white;
+}
+
+/*FOOTER*/
+.feito {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 20vh;
+  background-color: var(--orage);
+}
+
+.termos {
+  background-color: black;
+  color: white;
+  height: 5vh;
+}
+
+/*RESPONSIVIDADE*/
+@media (max-width: 600px) {
+  .img-tec {
+    width: 50%;
+    height: 500px;
+  }
+
+  .tec {
+    width: 150px;
+    height: 20%;
+  }
+
+  .boxassunto {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .tamanho-form {
+    width: 100%;
+  }
+}
